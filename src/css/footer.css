@@ -1,0 +1,28 @@
+.footer {
+    max-width: 1200px;
+    padding: 40px 28px;
+    margin: 0 auto;
+    background-color: #141414;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    border: solid 0.1px #6FDB1D;
+    padding: 10px;
+}
+
+.container-footer img {
+    max-width: 50px;
+    border-radius: 30px;
+}
+
+/* Responsividade */
+@media(max-width:768px) {
+    .container-footer img {
+        width: 30px;
+    }
+}

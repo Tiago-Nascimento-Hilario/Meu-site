@@ -1,0 +1,80 @@
+.introducao {
+    max-width: 1200px;
+    padding: 40px 28px;
+    margin: 0 auto;
+    /* background-color: #F5F; */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.introducao img {
+    border-radius: 40%;
+}
+
+.introducao h1 {
+    font-size: 4.5rem;
+    line-height: 1.125;
+    margin-bottom: 30px;
+    position: relative;
+    animation-duration: 3s;
+    animation-name: slide ;
+}
+
+@keyframes slide{
+    from{
+        margin-right: 5%;
+        width: 200%;
+
+    }
+    to{
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+.introducao h1::before {
+    content: "";
+    display: block;
+    width: 138px;
+    height: 100px;
+    background: url("/img/detalhe.svg");
+    position: absolute;
+    top: -35px;
+    left: -40px;
+    z-index: -1;
+}
+
+.introducao p {
+    font-size: 1.5rem;
+    color: #525252;
+}
+
+/* Reponsividade */
+@media(max-width: 768px) {
+    .introducao {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 40px;
+        margin-top: 30px;
+        
+        /* background-color: #5F5; */
+    }
+
+    .introducao img{
+        margin-bottom: 25px;
+        border-radius: 6px;
+    }
+
+    .introducao h1 {
+        font-size: 1.5rem;
+    }
+    .introducao h1::before{
+        border-bottom: 10px solid #6FDB1D;
+        width: 50px;
+        height: 10px;
+        left: -0px;
+    }
+
+}

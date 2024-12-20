@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    color: #141414;
+}
+h1, h2, h3, p{
+    margin: 0px;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #141414;
+    
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.subtitulo{
+    font-size: 7rem;
+    line-height: 1;
+    text-transform: uppercase;
+    word-break: break-all; 
+    max-width: 5ch;
+}

@@ -1,0 +1,44 @@
+.formacao-container{
+    max-width: 1200px;
+    padding: 40px 28px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #141414;
+}
+.subtitulo{
+    max-width: 4ch;
+}
+
+.formacao{
+   
+    color:#FFF;
+}
+.formacao-texto{
+    font-size: 1.5rem;
+    line-height: 1.33;
+    max-width: 40ch;
+    margin-bottom: 60px;
+    color: #A3A3A3;
+}
+.lista-formacoes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+.faculdade{
+    border-left: solid 3px  #6FDB1D;
+    padding: 20px;
+}
+/* Responsividade */
+@media(max-width:768px){
+    .formacao-container{
+        grid-template-columns: 1fr;
+    }
+    .subtitulo{
+        font-size: 3rem;
+        max-width: initial;
+        margin-bottom: 10px;
+    }
+}
